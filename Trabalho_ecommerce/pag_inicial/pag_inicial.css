@@ -1,0 +1,87 @@
+.Hero_favicon{
+width: 100%;
+}
+
+.hero_title{
+display: flex;
+align-items: center;
+pad: 20px;
+}
+
+a{
+color: rgb(24, 23, 23);
+text-decoration: none;
+}
+
+
+nav{
+flex: 1;
+text-align: right;
+}
+
+nav ul{
+display: inline-block;
+list-style-type: none;
+}
+
+nav ul li{
+display: inline-block;
+margin: 25px;
+;
+}
+
+.hero_box{
+margin: auto;
+width: 1300px;
+padding-left: 25px;
+padding-right: 25px;
+
+}
+
+p{
+color:rgb(24, 23, 23) ;
+}
+
+.hero_part_1{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.hero_part_1_1{
+flex-basis: 50%;
+min-width: 300px;
+}
+
+.hero_part_1_1 img{
+max-width: 100%;
+padding: 50px 0;
+}
+.hero_part_1 h1{
+font-size: 50px;
+line-height: 62px;
+margin: 25px 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: rgba(17, 0, 61, 0.625);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.hero_buton{
+display: inline-block;
+background-color: #be1840;
+color: #ffffff;
+padding: 8px 30px;
+border-radius: 30px;
+
+}
+
+.hero_image{
+border-image: auto;
+border-radius: 12px ;
+}
