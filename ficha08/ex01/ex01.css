@@ -1,0 +1,40 @@
+body{
+background-color: #FFFFFF;
+}
+
+.hero_images{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+padding: 80px;
+align-items: center;
+row-gap: 60px;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+      background-color: lightblue;
+    }
+    .hero_images{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        align-items: center;
+        row-gap: 60px;
+        
+        }
+  }
+  
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: #FFFFFF;
+    }
+    .hero_images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        align-items: center;
+        row-gap: 60px;
+
+        }
+  }

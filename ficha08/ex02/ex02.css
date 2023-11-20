@@ -1,0 +1,32 @@
+body{
+background-color: #FFFFFF;
+color: black;
+font-family: 'Inter';
+}
+
+.hero_section{
+padding: 80px;
+}
+
+p{
+font-display: wrap;
+
+}
+
+.hero_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    
+}
+
+.img{
+width: 295px;
+border-radius: 20px;
+}
+
+figcaption{
+margin-top: 16px;
+margin-bottom: 6px;
+
+}
