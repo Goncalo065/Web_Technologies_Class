@@ -11,7 +11,7 @@ body{
 width: 100%;
 }
 
-.hero_title{
+.hero_navbar{
 display: flex;
 align-items: center;
 pad: 20px;
@@ -41,7 +41,6 @@ list-style-type: none;
 nav ul li{
 display: inline-block;
 margin: 25px;
-;
 }
 
 .hero_box{
