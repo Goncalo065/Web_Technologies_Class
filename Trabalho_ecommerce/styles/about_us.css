@@ -67,7 +67,7 @@ color: rgb(0, 0, 0);
     }
 
     nav ul {
-        position: absolute;
+        position: fixed;
         right: 0px;
         top: 70px;
         left: 0;
@@ -84,9 +84,7 @@ color: rgb(0, 0, 0);
 
     nav ul li {
     display: block;
-    margin-right:50px ;
-    margin-top:10px ;
-    margin-bottom: 10px;
+    padding-right: 30px;
     }
     
     nav ul li a {

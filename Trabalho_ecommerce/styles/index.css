@@ -3,6 +3,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    height: 100%;
     }
 
 .menu_i{
@@ -98,13 +99,21 @@ background: #3618be;
 
 @media only screen and (max-width:1024px){
 
+
+    .hero_part_1_1{
+        width: auto;
+        align-items: center;
+    }
+
+
     nav ul {
-        position: absolute;
+        position: fixed;
         right: 0px;
         top: 70px;
         left: 0;
         background: #33333300;
         width: 100%;
+        
         
     
     }
@@ -116,10 +125,8 @@ background: #3618be;
 
     nav ul li {
     display: block;
-    margin-right:50px ;
-    margin-top:10px ;
-    margin-bottom: 10px;
-    }
+    padding-right: 30px;
+ }
     
     nav ul li a {
     color: #000000;

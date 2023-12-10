@@ -58,6 +58,12 @@ padding-right: 25px;
 .hero_container{
 display: grid;
 grid-template-columns: repeat(3,1fr);
+
+}
+
+img{
+    border:3px #000000 solid; 
+    border-radius: 50px;
 }
 
 figure:hover{
@@ -86,7 +92,7 @@ button:hover{
 @media only screen and (max-width:1024px){
 
     nav ul {
-        position: absolute;
+        position: fixed;
         right: 0px;
         top: 70px;
         left: 0;
@@ -103,9 +109,7 @@ button:hover{
 
     nav ul li {
     display: block;
-    margin-right:50px ;
-    margin-top:10px ;
-    margin-bottom: 10px;
+    padding-right: 30px;
     }
     
     nav ul li a {
