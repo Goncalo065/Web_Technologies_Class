@@ -5,7 +5,11 @@ body{
     margin: 0;
     }
 
-
+.menu_i{
+    width: 50px;
+    margin-left: 20px;
+    display: none;
+}
 
 .Hero_favicon{
 width: 100%;
@@ -33,14 +37,11 @@ flex: 1;
 text-align: right;
 }
 
-nav ul{
-display: inline-block;
-list-style-type: none;
-}
 
 nav ul li{
 display: inline-block;
 margin: 25px;
+list-style-type: none;
 }
 
 .hero_box{
@@ -80,13 +81,76 @@ font-family: "Roboto";
 font-style: bold;
 }
 
-.hero_buton{
+.hero_button{
 display: inline-block;
 background-color: #be1840;
 color: #ffffff;
 padding: 8px 30px;
 border-radius: 30px;
+transition: background 0.5s;
+}
+
+.hero_button:hover{
+background: #3618be;
+
 }
 
 
+@media only screen and (max-width:1024px){
 
+    nav ul {
+        position: absolute;
+        right: 0px;
+        top: 70px;
+        left: 0;
+        background: #33333300;
+        width: 100%;
+        
+    
+    }
+    svg{
+        opacity: 0;
+    }
+
+
+
+    nav ul li {
+    display: block;
+    margin-right:50px ;
+    margin-top:10px ;
+    margin-bottom: 10px;
+    }
+    
+    nav ul li a {
+    color: #000000;
+    
+    }
+    
+    .menu_i{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .hero_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    }
+    
+    @media only screen and (max-width:600px){
+        .hero_part_1{
+            text-align:center;
+    
+        }
+    
+        .hero_part_1_1{
+    
+            flex-basis: 100%;
+        }
+        .hero_container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+    }

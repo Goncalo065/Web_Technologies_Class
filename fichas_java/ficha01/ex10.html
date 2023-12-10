@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <script>
+function numeroFeliz(num) {
+            let seen = new Set();
+
+            while (num !== 1 && !seen.has(num)) {
+                seen.add(num);
+                    num = somaQuadrados(num);
+    }
+
+return num === 1;
+}
+
+function somaQuadrados(num) {
+    let sum = 0;
+
+            while (num > 0) {
+    let digit = num % 10;
+            sum += digit * digit;
+            num = Math.floor(num / 10);
+    }
+
+return sum;
+}
+
+let numero = prompt("Digite um número:");
+
+// Convert the user input to a number
+let verificar = parseInt(numero);
+
+// Check if the entered number is a happy number
+if (!isNaN(verificar)) {
+    if (numeroFeliz(verificar)) {
+        console.log(verificar + " É um número feliz!");
+    } else {
+        console.log(verificar + " Não é um numero feliz.");
+    }
+} else {
+    console.log(" Input inválido. Digite um número.");
+}
+    </script>
+
+
+
+
+    
+</body>
+</html>
